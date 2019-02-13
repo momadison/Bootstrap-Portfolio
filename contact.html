@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>
+            function validateForm() {
+                var x = document.forms["myForm"]["name"].value;
+                var y = document.forms["myForm"]["email"].value;
+                var z = document.forms["myForm"]["message"].value;
+                if (x == "" || y == "" || z == "") {
+                    alert("Please fill out form completely");
+                    return false;
+                }
+            }
+        </script>
+        <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="#"></script>
+</head>
+<header>
+    <!--Navbar container-->
+    <div class="container">
+    <!--Insert Navbar-->
+       <nav class="navbar sticky-top navbar-expand-md navbar-light py-0">
+            <span class="navbar-text">Matthew Madison</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+           
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!--added ml-md-auto to move ul to the right-->
+                  <ul class="navbar-nav ml-md-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<body>
+    <!--content will put white background on content-->
+    <div class="container" id="content">
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Enter Name and HR-->
+                <div id="topcontent">
+                    <h1>Content</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!--New Row-->
+        <div class="row">
+            <div class="col-sm-12">
+                <form name="myForm" action="mailto:mattomadison@gmail.com" onsubmit="return validateForm()" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="First and Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3">
+                        </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+              <!---      <form name="myForm" action="mailto:mattomadison@gmail.com" onsubmit="return validateForm()" method="post">
+                            Name<br><br>
+                            <input class="form-control-md" type="text" name="name"><br><br>
+                            Email<br><br>
+                            <input class="form-control-md" type="text" name="email"><br><br>
+                            Message<br><br>
+                            <input class="form-control-lg" type="text" name="message"><br>
+                            <input class="button" type="submit" value="Submit"> -->
+                    </form>
+            </div>
+        </div>
+    </div> 
+        <footer>
+                Copyright ©
+        </footer>    
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+</body>
+</html>

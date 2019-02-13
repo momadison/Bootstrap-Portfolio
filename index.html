@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bootstrap-Portfolio</title>
+    <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -11,44 +11,73 @@
     <script src="#"></script>
 </head>
 <header>
+    <!--Navbar container-->
+    <div class="container">
+    <!--Insert Navbar-->
        <nav class="navbar sticky-top navbar-expand-md navbar-light py-0">
-                <a id="name" class="navbar-brand" href="index.html">Matthew Madison</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
+            <span class="navbar-text">Matthew Madison</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+           
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!--added ml-md-auto to move ul to the right-->
+                  <ul class="navbar-nav ml-md-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.html">About Me</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Portfolio</a>
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" tabindex="-1">Contact</a>
+                      <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                   </ul>
-                </div>
-              </nav>
+            </div>
+        </nav>
+    </div>
 </header>
 <body>
-    <!--Seperate top content from main content-->
-    <div class="container">
+    <!--content will put white background on content-->
+    <div class="container" id="content">
         <div class="row">
             <div class="col-sm-12">
-                <!--Enter image and text-->
+                <!--Enter Name and HR-->
+                <div id="topcontent">
+                    <h1>About Me</h1>
+                    <hr>
+                </div>
             </div>
         </div>
-    </div>
-    <!--Separate main content from footer-->
-    <div class="container">
+        <!--Enter main picutre and text-->
         <div class="row">
             <div class="col-sm-12">
-                <!--Enter footer info-->
+                    <div id="picbox">
+                            <img width="300px" src="assets/images/IMG_2361.JPG" alt="I believe I can fly"/>
+                    </div>
+                        <!--Holder for text-->
+                         <div id="abouttext">
+                            <p>"Who am I?  I am a father of six children - to date this is my greatest
+                            achievement.  Full Stack Development at SMU is my current devotion.  My current passion
+                            is machine learning, AI and Python.  I am working on my intel certifications and loving it.
+                            I have never been lucky enough to work in technology but have always found a job in technology
+                            in whatever job I have created.  Yes I have created every job that I've had in the last 12 years.
+                            In every company I have started I have created my company website using HTML and PHP with a tiny bit of CSS."
+                            </p>
+                            <p>"CSS scares me but I have found comfort in bootstrap.  I love the outdoors
+                            and spending time with my family.  I am in the process of raising three eagle scouts.
+                            I am a dedicated homeschooler to my children and homeschoolee to myself.  I hope one 
+                            day to bridge the gap between chemical and digital data.  I am pursuing a degree in 
+                            Neuroscience (but tired of traditional schooling methods).  I'm excited to hit the workforce
+                            and offer my creativity, passion, and dependability to an amazing company.  Bio version 1.0. Signing out.
+                            </p>
+                        </div>
+                    </div>
             </div>
-        </div>
-    </div>    
+        </div> 
+        <footer>
+                Copyright ©
+        </footer>    
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
