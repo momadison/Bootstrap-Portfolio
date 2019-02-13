@@ -42,19 +42,6 @@ footer {
     line-height: 50px;
 }
 
-.portfoliowrapper-left {
-    position: relative;
-    float: left;
-    margin-bottom: 5px;
-}
-
-.portfoliowrapper-right {
-    position: relative;
-    float: right;
-    margin-bottom: 5px;
-    margin-right: 410px;
-}
-
 .box {
     position: absolute;
     bottom: 75px;
@@ -76,6 +63,20 @@ footer {
     clear: both;
     display: table;
   }
+
+.portfoliowrapper-left {
+    position: relative;
+    float: left;
+    margin: 0 0 5 0;
+    padding: 0 0 5 0;
+}
+
+.portfoliowrapper-right {
+    position: absolute;
+    float: right;
+    padding-left: 255px;
+
+}
 
 .btn-primary {
     background: #4aaaa5;
@@ -100,44 +101,41 @@ footer {
     line-height: 65px;
 }
 
-#navlinks {
-    line-height: 75px;
-    float: right;
-    color: #6c6c6c;
+.divider {
+    font-family: "Arial Black", Gadget, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(184, 181, 181); 
+    line-height: 37px;
 }
-
-#content {
+#contentWrapper {
     background-color: #ffffff;
     margin: 25px auto;
     margin-bottom: 75px;
 }
 
-#topcontent {
-    margin: 40px 20px 20px 20px;
-    padding-top: 10px;
-}
-
-#bottomcontent {
-    margin: 0px 20px 20px 20px;
-}
-
-#formbox {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 15px;
-}
-
 #picbox {
-    padding: 0px 30px 10px 0px;
+    padding: 0px 20px 10px 0px;
     float: left;
     clear: left;
 }
 
-#abouttext {
+.abouttext {
     
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 35px;
+}
+
+@media (max-width: 525px) {
+   
+    .portfoliowrapper-right {
+        position: relative;
+        float: left;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-top: 5px;
+    }
+
 }
 
